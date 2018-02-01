@@ -1,0 +1,79 @@
+
+  # weather
+  - platform: moon
+  - platform: darksky
+    api_key: !secret darksky_key
+    monitored_conditions:
+      - summary
+      - icon
+
+  # speedtest
+  - platform: speedtest
+    minute:
+      - 0
+      - 30
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+
+  # system monitoring
+  # Hass Pi
+  - platform: uptime
+  - platform: cert_expiry
+    host: hass.thewordkeeper.com
+    name: Hass Cert
+    port: 8123
+  # - platform: systemmonitor
+  - platform: glances
+    host: 127.0.0.1
+    name: hass pi
+    resources:
+      # - type: disk_use_percent
+      #   arg: /
+      # - type: disk_use
+      #   arg: /
+      # - type: disk_free
+      #   arg: /
+      # - type: memory_use_percent
+      # - type: memory_use
+      # - type: memory_free
+      # - type: swap_use_percent
+      # - type: swap_use
+      # - type: swap_free
+      - 'disk_use_percent'
+      - 'disk_use'
+      - 'disk_free'
+      - 'memory_use_percent'
+      - 'memory_use'
+      - 'memory_free'
+      # - 'swap_use_percent'
+      # - 'swap_use'
+      # - 'swap_free'
+      - 'processor_load'
+      # - 'process_running'
+      # - 'process_total'
+      # - 'process_thread'
+      # - 'process_sleeping'
+      # - 'cpu_temp'
+
+  # Jason-CyberPowerPC
+  - platform: glances
+    host: 192.168.0.232
+    name: Jason CyberPowerPC
+    resources:
+      - 'disk_use_percent'
+      - 'disk_use'
+      - 'disk_free'
+      - 'memory_use_percent'
+      - 'memory_use'
+      - 'memory_free'
+  #     - 'swap_use_percent'
+  #     - 'swap_use'
+  #     - 'swap_free'
+      - 'processor_load'
+  #     - 'process_running'
+  #     - 'process_total'
+  #     - 'process_thread'
+  #     - 'process_sleeping'
+  #     - 'cpu_temp'

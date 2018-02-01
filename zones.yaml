@@ -1,0 +1,28 @@
+
+  - name: Grandma's
+    latitude: 35.856644
+    longitude: -86.351375
+    radius: 50
+
+  - name: Granny's
+    latitude: 35.741259
+    longitude: -86.323956
+    radius: 50
+
+  - name: Innovations
+    latitude: 35.448717
+    longitude: -86.092847
+    radius: 50
+    icon: mdi:store
+
+  - name: Church
+    latitude: 35.472276
+    longitude: -86.078094
+    radius: 150
+    icon: mdi:church
+
+  - name: MTSU
+    latitude: 35.84848
+    longitude: -86.360798
+    radius: 1000
+    icon: mdi:school

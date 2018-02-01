@@ -1,0 +1,46 @@
+device_tracker.unknown_6:
+  friendly_name: Wifi Extender
+  icon: mdi:wifi
+device_tracker.samsung:
+  friendly_name: Samsung 4k TV
+  icon: mdi:television
+device_tracker.amazon97d5f5927:
+  friendly_name: Kathy Kindle
+  icon: mdi:amazon
+device_tracker.unknown_2:
+  friendly_name: Vizio TV
+  icon: mdi:television
+device_tracker.androidd166ef5efb00a901:
+  friendly_name: Kevin GS3
+  icon: mdi:android
+device_tracker.unknown:
+  friendly_name: Router
+  icon: mdi:wifi
+device_tracker.unknown_4:
+  friendly_name: Vizio TV 2
+  icon: mdi:television
+device_tracker.androida639aee53d6e16a3:
+  friendly_name: Kathy GS4
+  icon: mdi:android
+device_tracker.androida8b3f837d0b74c94:
+  friendly_name: Jason GS4
+  icon: mdi:android
+device_tracker.toby:
+  friendly_name: Jason Laptop Toby
+  icon: mdi:laptop
+device_tracker.jesssiphone:
+  friendly_name: Jessica iPhone
+  icon: mdi:apple
+device_tracker.unknown_5:
+  friendly_name: Living Room PC
+  icon: mdi:desktop-tower
+device_tracker.raspberrypi:
+  icon: mdi:raspberrypi
+device_tracker.jasongs4gps:
+  friendly_name: Jason
+  icon: mdi:android
+device_tracker.jasonlaptop:
+  friendly_name: Old Laptop
+device_tracker.408d5c4e96db:
+  friendly_name: Jason CyberPowerPC
+  icon: mdi:desktop-tower

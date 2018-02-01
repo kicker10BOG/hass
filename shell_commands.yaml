@@ -1,0 +1,2 @@
+
+  get_side_door_lock_status: curl https://webhooks.stringify.com/v1/events/fEKBTcS1iCb3F99yGsNpV9svvetMzGwG/1/cc4c074c60b7a97b5009492e2d976400/qgwnxn1QgrdApKSZSS5V

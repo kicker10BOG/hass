@@ -1,0 +1,70 @@
+
+  # router and extender
+  network_infrastructure: 
+    name: Network Infrastructure
+    entities: 
+      - device_tracker.unknown
+      - device_tracker.unknown_6
+  
+  # Internet
+  internet_status:
+    name: Internet
+    entities:
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.speedtest_ping
+
+  # phones on the network
+  network_phones: 
+    name: Phones on Network
+    entities:
+      - device_tracker.androidd166ef5efb00a901
+      - device_tracker.androida639aee53d6e16a3
+      - device_tracker.androida8b3f837d0b74c94
+      - device_tracker.jesssiphone
+
+  # TVs on the network
+  network_TVs:
+    name: TVs
+    entities: 
+      - device_tracker.samsung
+      - device_tracker.unknown_4
+      - device_tracker.unknown_2
+  
+  # Pi system monitoring
+  hass_pi_monitor:
+    name: Main Pi Monitor
+    entities: 
+      - sensor.hass_pi_cpu_load
+      - sensor.hass_pi_disk_used
+      - sensor.hass_pi_disk_free
+      - sensor.hass_pi_disk_used_2
+      - sensor.hass_pi_ram_used
+      - sensor.hass_pi_ram_free
+      - sensor.hass_pi_ram_used_2
+      - sensor.hass_cert
+  
+  # Pi system monitoring
+  jason_cyberpower_monitor:
+    name: Jason CyberPowerPC Monitor
+    entities: 
+      - sensor.jason_cyberpowerpc_cpu_load
+      - sensor.jason_cyberpowerpc_disk_used
+      - sensor.jason_cyberpowerpc_disk_free
+      - sensor.jason_cyberpowerpc_disk_used_2
+      - sensor.jason_cyberpowerpc_ram_used
+      - sensor.jason_cyberpowerpc_ram_free
+      - sensor.jason_cyberpowerpc_ram_used_2
+      
+  # door locks 
+  door_locks:
+    name: Door Locks
+    entities: 
+      - binary_sensor.side_door
+
+  # sun and moon
+  sun_moon:
+    name: Sun and Moon
+    entities: 
+      - sun.sun
+      - sensor.moon

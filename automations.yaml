@@ -1,0 +1,7 @@
+
+  - alias: get_lock_statuses
+    trigger:
+      platform: homeassistant
+      event: start
+    action: 
+      service: shell_command.get_side_door_lock_status
