@@ -3,9 +3,30 @@
   - platform: moon
   - platform: darksky
     api_key: !secret darksky_key
+    forecast:
+      - 1
     monitored_conditions:
       - summary
-      - icon
+      - precip_type
+      - precip_intensity
+      - precip_probability
+      - temperature
+      - apparent_temperature
+      - dew_point
+      # - wind_speed
+      # - wind_bearing
+      - cloud_cover
+      - humidity
+      # - pressure
+      # - visibility
+      - daily_summary
+      - temperature_max
+      - temperature_min
+      # - apparent_temperature_max
+      # - apparent_temperature_min
+      
+    update_interval: 
+      minutes: 5
 
   # speedtest
   - platform: speedtest

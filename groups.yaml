@@ -68,3 +68,39 @@
     entities: 
       - sun.sun
       - sensor.moon
+
+  # dark sky weather
+  dark_sky_current:
+    name: Current Weather
+    entities: 
+      - sensor.dark_sky_summary
+      - sensor.dark_sky_temperature
+      - sensor.dark_sky_apparent_temperature
+
+  # dark sky weather
+  dark_sky_today:
+    name: Today's Forecast
+    entities: 
+      - sensor.dark_sky_cloud_coverage
+      - sensor.dark_sky_daily_high_temperature
+      - sensor.dark_sky_daily_low_temperature
+      - sensor.dark_sky_daily_summary
+      - sensor.dark_sky_dew_point
+      - sensor.dark_sky_humidity
+      - sensor.dark_sky_precip
+      - sensor.dark_sky_precip_intensity
+      - sensor.dark_sky_precip_probability
+
+  # dark sky weather
+  dark_sky_tomorrow:
+    name: Tomorrow's Forecast
+    entities: 
+      - sensor.dark_sky_cloud_coverage_1
+      - sensor.dark_sky_daily_high_temperature_1
+      - sensor.dark_sky_daily_low_temperature_1
+      - sensor.dark_sky_daily_summary_1
+      - sensor.dark_sky_dew_point_1
+      - sensor.dark_sky_humidity_1
+      - sensor.dark_sky_precip_1
+      - sensor.dark_sky_precip_intensity_1
+      - sensor.dark_sky_precip_probability_1
