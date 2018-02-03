@@ -1,3 +1,7 @@
+group.all_automations:
+  hidden: false
+group.all_scripts:
+  hidden: false
 device_tracker.unknown_6:
   friendly_name: Wifi Extender
   icon: mdi:wifi
@@ -41,6 +45,52 @@ device_tracker.jasongs4gps:
   icon: mdi:android
 device_tracker.jasonlaptop:
   friendly_name: Old Laptop
+  icon: mdi:laptop
 device_tracker.408d5c4e96db:
   friendly_name: Jason CyberPowerPC
   icon: mdi:desktop-tower
+device_tracker.desktopqa2d98s:
+  friendly_name: Jessica Laptop
+
+sensor.dark_sky_summary:
+  friendly_name: Summary
+sensor.dark_sky_temperature:
+  friendly_name: Temperature
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Feels Like
+
+sensor.dark_sky_daily_summary:
+  friendly_name: Summary
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: High
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Low
+sensor.dark_sky_cloud_coverage:
+  friendly_name: Cloud Coverage
+sensor.dark_sky_precip:
+  friendly_name: Precip Type
+sensor.dark_sky_precip_intensity:
+  friendly_name: Precip Intensity
+sensor.dark_sky_precip_probability:
+  friendly_name: Precip Probability
+sensor.dark_sky_humidity:
+  friendly_name: Humidity
+sensor.dark_sky_dew_point:
+  friendly_name: Dew Point
+
+sensor.dark_sky_daily_high_temperature_1:
+  friendly_name: High
+sensor.dark_sky_daily_low_temperature_1:
+  friendly_name: Low
+sensor.dark_sky_cloud_coverage_1:
+  friendly_name: Cloud Coverage
+sensor.dark_sky_precip_1:
+  friendly_name: Precip Type
+sensor.dark_sky_precip_intensity_1:
+  friendly_name: Precip Intensity
+sensor.dark_sky_precip_probability_1:
+  friendly_name: Precip Probability
+sensor.dark_sky_humidity_1:
+  friendly_name: Humidity
+sensor.dark_sky_dew_point_1:
+  friendly_name: Dew Point

@@ -30,7 +30,37 @@
       - device_tracker.samsung
       - device_tracker.unknown_4
       - device_tracker.unknown_2
+
+  # computers on network
+  network_computers:
+    name: Computers
+    entities: 
+      - device_tracker.raspberrypi
+      - device_tracker.408d5c4e96db
+      - device_tracker.unknown_5
+      - device_tracker.toby
+      - device_tracker.jasonlaptop
+      - device_tracker.desktopqa2d98s
   
+  # tablets
+  network_tablets:
+    name: Tablets
+    entities:
+      - device_tracker.amazon97d5f5927
+
+  # GPS
+  gps:
+    name: GPS
+    entities:
+      - device_tracker.jasongs4gps
+
+  # HASS Monitor
+  hass_monitor:
+    name: HASS Monitor
+    entities: 
+      - sensor.hass_cert
+      - sensor.uptime
+
   # Pi system monitoring
   hass_pi_monitor:
     name: Main Pi Monitor
@@ -42,9 +72,8 @@
       - sensor.hass_pi_ram_used
       - sensor.hass_pi_ram_free
       - sensor.hass_pi_ram_used_2
-      - sensor.hass_cert
   
-  # Pi system monitoring
+  # Jason CyberPowerPC system monitoring
   jason_cyberpower_monitor:
     name: Jason CyberPowerPC Monitor
     entities: 
@@ -55,12 +84,30 @@
       - sensor.jason_cyberpowerpc_ram_used
       - sensor.jason_cyberpowerpc_ram_free
       - sensor.jason_cyberpowerpc_ram_used_2
+  
+  # Living Room PC system monitoring
+  living_room_pc_monitor:
+    name: Living Room PC Monitor
+    entities: 
+      - sensor.living_room_pc_cpu_load
+      - sensor.living_room_pc_disk_used
+      - sensor.living_room_pc_disk_free
+      - sensor.living_room_pc_disk_used_2
+      - sensor.living_room_pc_ram_used
+      - sensor.living_room_pc_ram_free
+      - sensor.living_room_pc_ram_used_2
       
   # door locks 
   door_locks:
     name: Door Locks
     entities: 
       - binary_sensor.side_door
+
+  # door lock actions
+  door_lock_actions:
+    name: Actions
+    entities: 
+      - automation.get_lock_statuses
 
   # sun and moon
   sun_moon:
@@ -81,26 +128,76 @@
   dark_sky_today:
     name: Today's Forecast
     entities: 
-      - sensor.dark_sky_cloud_coverage
+      - sensor.dark_sky_daily_summary
       - sensor.dark_sky_daily_high_temperature
       - sensor.dark_sky_daily_low_temperature
-      - sensor.dark_sky_daily_summary
-      - sensor.dark_sky_dew_point
-      - sensor.dark_sky_humidity
+      - sensor.dark_sky_cloud_coverage
       - sensor.dark_sky_precip
       - sensor.dark_sky_precip_intensity
       - sensor.dark_sky_precip_probability
+      - sensor.dark_sky_humidity
+      - sensor.dark_sky_dew_point
 
   # dark sky weather
   dark_sky_tomorrow:
     name: Tomorrow's Forecast
     entities: 
-      - sensor.dark_sky_cloud_coverage_1
       - sensor.dark_sky_daily_high_temperature_1
       - sensor.dark_sky_daily_low_temperature_1
-      - sensor.dark_sky_daily_summary_1
-      - sensor.dark_sky_dew_point_1
-      - sensor.dark_sky_humidity_1
+      - sensor.dark_sky_cloud_coverage_1
       - sensor.dark_sky_precip_1
       - sensor.dark_sky_precip_intensity_1
       - sensor.dark_sky_precip_probability_1
+      - sensor.dark_sky_humidity_1
+      - sensor.dark_sky_dew_point_1
+
+  # Network view
+  network_view:
+    view: yes
+    icon: mdi:network
+    name: Network
+    entities:
+      - group.network_infrastructure
+      - group.internet_status
+      - group.network_computers
+      - group.network_phones
+      - group.network_TVs
+      - group.network_tablets
+
+  # weather view
+  weather_view:
+    view: yes
+    icon: mdi:weather-partlycloudy
+    name: Weather
+    entities: 
+      - group.dark_sky_current
+      - group.dark_sky_today
+      - group.dark_sky_tomorrow
+
+  # computer system monitoring view
+  computer_system_monitoring_view:
+    view: yes
+    icon: mdi:server-security
+    name: System Monitoring
+    entities: 
+      - group.hass_pi_monitor
+      - group.jason_cyberpower_monitor
+      - group.living_room_pc_monitor
+  
+  # HASS monitoring view
+  hass_monitor_view:
+    view: yes
+    icon: mdi:home-assistant
+    name: Hass Monitor
+    entities: 
+      - group.hass_monitor
+      - group.hass_pi_monitor
+
+  # Home security view
+  home_security_view:
+    view: yes
+    icon: mdi:security-home
+    name: Home Security
+    entities:
+      - group.door_locks
+      - group.door_lock_actions
